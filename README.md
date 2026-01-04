@@ -202,7 +202,22 @@ Example:
 <br>
 <br>
 
-### Step 6a - Verify your docker engine installation (from WSL/Ubuntu)
+
+### Step 6 - IntelliJ IDEA (optional)
+
+IntelliJ IDEA has a nice UI for Docker. If you want to use it you'll need to tell the IDE that you are using the Docker Engine
+inside WSL, meaning you are not using "Docker for Windows" which is what the IDE will assume by default.
+
+Here is the setting:
+
+![image](https://github.com/user-attachments/assets/cd265d49-e8d5-4c88-b84a-f587ccc18488)
+
+Ref: [Jetbrains's documentation](https://www.jetbrains.com/help/idea/settings-docker.html)
+
+<br>
+<br>
+
+### Step 7a - Verify your docker engine installation (from WSL/Ubuntu)
 
 (In WSL/Ubuntu)
 
@@ -216,7 +231,7 @@ This should print a lot of stuff on the console, most importantly, "Hello from D
 <br>
 <br>
 
-### Step 6b - Verify your docker engine installation (from Windows)
+### Step 7b - Verify your docker engine installation (from Windows)
 
 (In Windows - this step assumes you've done Step 4 previously)
 
@@ -231,7 +246,7 @@ This should print a lot of stuff on the console, most importantly, "Hello from D
 <br>
 <br>
 
-### Step 6c - Verify your docker engine installation with TestContainers (from Windows)
+### Step 7c - Verify your docker engine installation with TestContainers (from Windows)
 
 (In Windows)
 
@@ -242,7 +257,7 @@ If you are a Java developer and use TestContainers, then you use the project in
 <br>
 <br>
 
-### Step 7 - Make WSL start automatically when Windows starts (optional)
+### Step 8 - Make WSL start automatically when Windows starts (optional)
 
 Personally, I can live with always starting a WSL/Ubuntu session in order to have my docker running. 
 After all, WSL2 does take up some resources, although it is surprisingly effective.

@@ -252,7 +252,7 @@ This should print a lot of stuff on the console, most importantly, "Hello from D
 
 (In Windows)
 
-If you are a Java developer and use TestContainers, then you use the project in 
+If you are a Java developer and use TestContainers, then you can use the project in 
 [testcontainers-verification](testcontainers-verification/) to verify that it works.
 
 
@@ -261,12 +261,14 @@ If you are a Java developer and use TestContainers, then you use the project in
 
 ### Step 8 - Make WSL start automatically when Windows starts (optional)
 
+Your docker deamon will start when WSL2 starts.
+
 Personally, I can live with always starting a WSL/Ubuntu session in order to have my docker running. 
 After all, WSL2 does take up some resources, although it is surprisingly effective.
 
-However, you may want that WSL/Ubuntu is _always_ started.
+However, you may want that WSL/Ubuntu is _always_ started, so that the docker daemon is always available.
 For this purpose, [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/) can be used.
-If you do not already have this tool installed, then please do. 
+If you do not already have this tool installed, then please do. Highly recommended!
 
 You can configure Windows Terminal to start automatically when Windows starts (or more precisely: when you log in, as it is not a background service)
 and then you can make sure that Windows Terminal always starts out with an Ubuntu sesssion. 
@@ -277,5 +279,5 @@ Here is what it looks like in the _Settings_ for Windows Terminal:
 ![image](https://github.com/user-attachments/assets/af17aa86-1aac-4778-8f08-e0895e324c24)
 
 
-Voila. Because the Terminal starts an Ubuntu shell it effectively needs to start WSL too.
+Voila. Because the Terminal starts an Ubuntu shell it effectively needs to start WSL too. And then you have your docker daemon.
 
